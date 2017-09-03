@@ -9,21 +9,18 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 
 module.exports = {
     entry    : "./client/index.jsx",
+    plugins  : [HtmlWebpackPluginConfig],
+    devServer: { historyApiFallback: true },
+    resolve  : { extensions: [".js", ".jsx"] },
     output   : {
         path    : path.resolve("dist"),
         filename: "index_bundle.js"
     },
-    module   : {
+
+    module: {
         loaders: [
             { test: /\.js$/, loader: "babel-loader", exclude: /node_modules/ },
             { test: /\.jsx$/, loader: "babel-loader", exclude: /node_modules/ }
         ]
-    },
-    resolve  : {
-        extensions: [".js", ".jsx"]
-    },
-    devServer: {
-        historyApiFallback: true
-    },
-    plugins  : [HtmlWebpackPluginConfig]
+    }
 }

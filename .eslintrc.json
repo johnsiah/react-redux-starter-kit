@@ -21,6 +21,8 @@
   ],
   "rules": {
     "comma-dangle": [2, "never"],
+    "curly": [2, "multi"],
+    "handle-callback-err": [2, "^.*(e|E)rr"],
     "indent": [2, 4, { "SwitchCase": 1 }],
     "key-spacing": [2, { "align": "colon" }],
     "no-multi-spaces": [
@@ -35,6 +37,7 @@
     "no-console": 1,
     "no-unused-vars": 1,
     "no-use-before-define": 0,
+    "operator-linebreak": [2, "before"],
     "quotes": [2, "double"],
     "react/forbid-prop-types": 0,
     "react/jsx-closing-bracket-location": [2, "after-props"],
