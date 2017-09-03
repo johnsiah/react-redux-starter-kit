@@ -1,22 +1,22 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { bindActionCreators } from 'redux'
-import { connect } from 'react-redux'
+import React from "react"
+import PropTypes from "prop-types"
+import { bindActionCreators } from "redux"
+import { connect } from "react-redux"
 import {
     BrowserRouter as Router,
     Route,
-    Switch,
-} from 'react-router-dom'
-import * as ExampleActions from '../actions'
-import Home from './Home'
-import NotFound from "./NotFound";
-import PropsRoute from '../components/PropsRoute'
+    Switch
+} from "react-router-dom"
+import * as ExampleActions from "../actions"
+import Home from "./Home"
+import NotFound from "./NotFound"
+import PropsRoute from "../components/PropsRoute"
 
 const App = ({ example, actions }) => (
     <Router>
         <Switch>
-            <PropsRoute exact path="/" component={Home}/>
-            <Route component={NotFound}/>
+            <PropsRoute exact path="/" component={Home} />
+            <Route component={NotFound} />
         </Switch>
     </Router>
 )

@@ -3,7 +3,7 @@ import {
 } from "../actions/index"
 
 const initialState = {
-    text: 'Example'
+    text: "Example"
 }
 
 export default function example(state = initialState, action) {

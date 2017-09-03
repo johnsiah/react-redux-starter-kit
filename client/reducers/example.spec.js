@@ -1,34 +1,34 @@
-import example from './example'
-import * as actions from '../actions/index'
+import example from "./example"
+import * as actions from "../actions/index"
 
-describe('example reducer', () => {
-    it('should handle initial state', () => {
+describe("example reducer", () => {
+    it("should handle initial state", () => {
         expect(
             example(undefined, {})
         ).toEqual({
-            text: 'Example'
+            text: "Example"
         })
     })
 
-    it('should handle EXAMPLE', () => {
+    it("should handle EXAMPLE", () => {
         expect(
             example({}, {
                 type: actions.EXAMPLE,
-                text: 'Example Test'
+                text: "Example Test"
             })
         ).toEqual({
-            text: 'Example Test'
+            text: "Example Test"
         })
 
         expect(
             example({
-                text: 'Test'
+                text: "Test"
             }, {
                 type: actions.EXAMPLE,
-                text: 'Tested'
+                text: "Tested"
             })
         ).toEqual({
-            text: 'Tested'
+            text: "Tested"
         })
     })
 })

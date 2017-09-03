@@ -1,3 +1,3 @@
-export const EXAMPLE = 'EXAMPLE'
+export const EXAMPLE = "EXAMPLE"
 
-export const example = (text) => ({ type: EXAMPLE, text })
+export const example = text => ({ type: EXAMPLE, text })
