@@ -4,11 +4,16 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint . --ext .jsx --ext .js",
+    "lint": "yarn lint:eslint -- . --ext .js --ext .jsx",
+    "lint:eslint": "eslint",
     "start": "webpack-dev-server",
     "pretest": "yarn run test:clean && yarn run lint",
     "test": "jest",
-    "test:clean": "rimraf ./coverage"
+    "test:clean": "rimraf ./coverage",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "lint:eslint"
   },
   "jest": {
     "collectCoverage": true,
@@ -42,7 +47,9 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.3.0",
+    "husky": "^0.14.3",
     "jest": "^20.0.4",
+    "lint-staged": "^4.0.4",
     "react-addons-test-utils": "^15.6.0",
     "react-test-renderer": "^15.6.1",
     "redux-mock-store": "^1.2.3",
