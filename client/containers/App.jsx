@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import PropTypes from 'prop-types'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
@@ -10,6 +10,7 @@ import {
 import * as ExampleActions from '../actions'
 import Home from './Home'
 import NotFound from "./NotFound";
+import PropsRoute from '../components/PropsRoute'
 
 const App = ({ example, actions }) => (
     <Router>
@@ -19,18 +20,6 @@ const App = ({ example, actions }) => (
         </Switch>
     </Router>
 )
-
-const PropsRoute = ({ component, ...rest }) => {
-    return (
-        <Route {...rest} render={routeProps => {
-            return renderMergedProps(component, routeProps, rest);
-        }}/>
-    );
-}
-
-const renderMergedProps = (component, ...rest) => {
-    return React.createElement(component, Object.assign({}, ...rest))
-}
 
 App.propTypes = {
     example: PropTypes.object.isRequired,
