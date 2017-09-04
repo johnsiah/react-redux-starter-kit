@@ -1,10 +1,22 @@
-# react-redux-starter-kit
-This project is using React, Redux, React-Router, Redux-Thunk, Styled Components, Jest and ESLint as a base starter kit. Any pull requests are welcome.
+# react-redux-starter-kit [WIP]
+This project is a MERN starter kit with the popular react-redux framework. Any pull requests are welcome.
+
+## Frameworks
+- React
+- Redux
+- React-Router
+- Redux-Thunk
+- Styled Components
+- NodeJS
+- ExpressJS
+- Mongoose
+- Jest
+- ESLint
 
 ## Get Started
-- Setup dependency using `yarn install`
+- Setup dependency using `yarn install` or `npm install`
 - Remove all `Example` related functions and keyword in `Actions`, `Reducers` and `App`.
-- Run development server using `yarn start`
+- Run development server using `yarn start` or `npm start`
 
 ## Features
 - Pre-commit lint checks

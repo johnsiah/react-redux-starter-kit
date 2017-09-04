@@ -4,10 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "lint": "yarn lint:eslint -- . --ext .js --ext .jsx",
+    "lint": "npm run lint:eslint -- . --ext .js --ext .jsx",
     "lint:eslint": "eslint",
     "start": "webpack-dev-server",
-    "pretest": "yarn run test:clean && yarn run lint",
+    "pretest": "npm run test:clean && npm run lint",
     "test": "jest",
     "test:clean": "rimraf ./coverage",
     "precommit": "lint-staged"
