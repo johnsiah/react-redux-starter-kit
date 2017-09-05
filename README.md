@@ -20,11 +20,11 @@ This project is a MERN starter kit with the popular react-redux framework. Any p
 - Remove all `Example` related functions and keyword in `Actions`, `Reducers` and `App`.
 
 ## Command
-- `npm start` - http://localhost:3000 for client-server development
+- `npm start` - [localhost:3000](http://localhost:3000) for client-server development
 - `npm run start:all` - Same as `npm start`
-- `npm run start:client` - http://localhost:3000 for client development
-- `npm run start:server` - http://localhost:8000 for server development
-- `npm run start:prod` - http://localhost:3000 for client-server development in production mode
+- `npm run start:client` - [localhost:3000](http://localhost:3000) for client development
+- `npm run start:server` - [localhost:8000](http://localhost:8000) for server development
+- `npm run start:prod` - [localhost:3000](http://localhost:3000) for client-server development in production mode
 
 ## Features
 - Pre-commit lint checks
