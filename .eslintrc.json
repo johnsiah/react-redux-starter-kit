@@ -25,16 +25,9 @@
     "handle-callback-err": [2, "^.*(e|E)rr"],
     "indent": [2, 4, { "SwitchCase": 1 }],
     "key-spacing": [2, { "align": "colon" }],
-    "no-multi-spaces": [
-      2,
-      {
-        "exceptions": {
-          "VariableDeclarator": true,
-          "ImportDeclaration": true
-        }
-      }
-    ],
+    "no-multi-spaces": 0,
     "no-console": 1,
+    "no-underscore-dangle": 0,
     "no-unused-vars": 1,
     "no-use-before-define": 0,
     "operator-linebreak": [2, "before"],
