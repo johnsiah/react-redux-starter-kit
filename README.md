@@ -7,6 +7,7 @@ This project is a MERN starter kit with the popular react-redux framework. Any p
 - React-Router
 - Redux-Thunk
 - Styled Components
+- Axios
 - NodeJS
 - ExpressJS
 - Mongoose
