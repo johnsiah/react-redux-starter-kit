@@ -6,4 +6,8 @@ router.get("/", (req, res) => {
     res.end("/api")
 })
 
+router.all("*", (req, res) => {
+    res.end("Api not found.")
+})
+
 module.exports = router
