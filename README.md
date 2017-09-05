@@ -2,18 +2,18 @@
 This project is a MERN starter kit with the popular react-redux framework. Any pull requests are welcome.
 
 ## Frameworks
-- React
-- Redux
-- React-Router
-- Redux-Thunk
-- Styled Components
-- Axios
-- NodeJS
-- ExpressJS
-- Mongoose
-- Nodemon
-- Jest
-- ESLint
+- [x] React
+- [x] Redux
+- [x] React-Router
+- [x] Redux-Thunk
+- [x] Styled Components
+- [x] Axios
+- [x] NodeJS
+- [x] ExpressJS
+- [ ] Mongoose
+- [x] Nodemon
+- [x] Jest
+- [x] ESLint
 
 ## Get Started
 - Setup dependency using `yarn install` or `npm install`
