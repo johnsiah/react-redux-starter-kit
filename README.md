@@ -10,21 +10,28 @@ This project is a MERN starter kit with the popular react-redux framework. Any p
 - [x] Axios
 - [x] NodeJS
 - [x] ExpressJS
-- [ ] Mongoose
+- [ ] Postgresql
+- [ ] Sequelize
 - [x] Nodemon
 - [x] Jest
 - [x] ESLint
 
 ## Get Started
 - Setup dependency using `npm install`
+- Install Postgresql using `brew install postgresql`
+- Run `npm install -g sequelize-cli` to use database helper (optional)
 - Remove all `Example` related functions and keyword in `Actions`, `Reducers` and `App`.
 
 ## Command
-- `npm start` - [localhost:3000](http://localhost:3000) for client-server development
-- `npm run start:all` - Same as `npm start`
-- `npm run start:client` - [localhost:3000](http://localhost:3000) for client development
-- `npm run start:server` - [localhost:8000](http://localhost:8000) for server development
-- `npm run start:prod` - [localhost:3000](http://localhost:3000) for client-server development in production mode
+- `start` - [localhost:3000](http://localhost:3000) for client-server development
+- `start:all` - Same as `start`
+- `start:client` - [localhost:3000](http://localhost:3000) for client development
+- `start:server` - [localhost:8000](http://localhost:8000) for server development
+- `start:prod` - [localhost:3000](http://localhost:3000) for client-server development in production mode
+- `lint` - Run ESLint on all .js and .jsx files
+- `lint:eslint` - Same as `lint`
+- `test` - Run test with Jest
+- `test:clean` - Clear all test coverage files
 
 ## Features
 - Pre-commit lint checks
