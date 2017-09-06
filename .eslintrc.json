@@ -20,6 +20,7 @@
     "jsx-a11y"
   ],
   "rules": {
+    "arrow-parens": [2, "as-needed", { "requireForBlockBody": false }],
     "comma-dangle": [2, "never"],
     "curly": [2, "multi"],
     "handle-callback-err": [2, "^.*(e|E)rr"],
