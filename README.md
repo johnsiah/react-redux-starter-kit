@@ -16,7 +16,7 @@ This project is a MERN starter kit with the popular react-redux framework. Any p
 - [x] ESLint
 
 ## Get Started
-- Setup dependency using `yarn install` or `npm install`
+- Setup dependency using `npm install`
 - Remove all `Example` related functions and keyword in `Actions`, `Reducers` and `App`.
 
 ## Command

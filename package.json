@@ -5,7 +5,7 @@
   "scripts": {
     "start": "npm run start:all",
     "start:all": "npm-run-all -p start:server start:client",
-    "start:server": "nodemon ./server/bin/www",
+    "start:server": "nodemon ./server/bin/www --watch server",
     "start:client": "webpack-dev-server",
     "start:prod": "cross-env NODE_ENV=production npm run start",
     "lint": "npm run lint:eslint -- . --ext .js --ext .jsx",
