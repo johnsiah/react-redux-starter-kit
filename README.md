@@ -1,5 +1,5 @@
 # react-redux-starter-kit [WIP]
-This project is a MERN starter kit with the popular react-redux framework. Any pull requests are welcome.
+This project is a PERN starter kit with the popular react-redux framework. Any pull requests are welcome.
 
 ## Frameworks
 - [x] React
@@ -10,8 +10,8 @@ This project is a MERN starter kit with the popular react-redux framework. Any p
 - [x] Axios
 - [x] NodeJS
 - [x] ExpressJS
-- [ ] Postgresql
-- [ ] Sequelize
+- [x] Postgresql
+- [x] Sequelize
 - [x] Nodemon
 - [x] Jest
 - [x] ESLint
@@ -23,16 +23,18 @@ This project is a MERN starter kit with the popular react-redux framework. Any p
 - Remove all `Example` related functions and keyword in `Actions`, `Reducers` and `App`.
 
 ## Command
-- `start` - [localhost:3000](http://localhost:3000) for client-server development
-- `start:all` - Same as `start`
-- `start:all:prod` - Same as `start` but in production mode
-- `start:client` - [localhost:3000](http://localhost:3000) for client development
-- `start:server` - [localhost:8000](http://localhost:8000) for server development
-- `start:server:prod` - [localhost:8000](http://localhost:8000) for server development in production mode
-- `lint` - Run ESLint on all .js and .jsx files
-- `lint:eslint` - Same as `lint`
-- `test` - Run test with Jest
-- `test:clean` - Clear all test coverage files
+|Script             |Description|
+|-------------------|-----------|
+|`start`            |[localhost:3000](http://localhost:3000) for client-server development|
+|`start:all`        |Same as `start`|
+|`start:all:prod`   |Same as `start` but in production mode|
+|`start:client`     |[localhost:3000](http://localhost:3000) for client development|
+|`start:server`     |[localhost:8000](http://localhost:8000) for server development|
+|`start:server:prod`|[localhost:8000](http://localhost:8000) for server development in production mode|
+|`lint`             |Run ESLint on all .js and .jsx files|
+|`lint:eslint`      |Same as `lint`|
+|`test`             |Run test with Jest|
+|`test:clean`       |Clear all test coverage files|
 
 ## Features
 - Pre-commit lint checks
