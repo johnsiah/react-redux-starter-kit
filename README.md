@@ -25,9 +25,10 @@ This project is a MERN starter kit with the popular react-redux framework. Any p
 ## Command
 - `start` - [localhost:3000](http://localhost:3000) for client-server development
 - `start:all` - Same as `start`
+- `start:all:prod` - Same as `start` but in production mode
 - `start:client` - [localhost:3000](http://localhost:3000) for client development
 - `start:server` - [localhost:8000](http://localhost:8000) for server development
-- `start:prod` - [localhost:3000](http://localhost:3000) for client-server development in production mode
+- `start:server:prod` - [localhost:8000](http://localhost:8000) for server development in production mode
 - `lint` - Run ESLint on all .js and .jsx files
 - `lint:eslint` - Same as `lint`
 - `test` - Run test with Jest
@@ -36,3 +37,4 @@ This project is a MERN starter kit with the popular react-redux framework. Any p
 ## Features
 - Pre-commit lint checks
 - Jest tests
+- Server cluster for production
