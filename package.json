@@ -4,10 +4,11 @@
   "license": "MIT",
   "scripts": {
     "start": "npm run start:all",
+    "start:prod": "cross-env NODE_ENV=production npm run start:all",
     "start:all": "npm-run-all -p start:server start:client",
-    "start:server": "nodemon ./server/bin/www --watch server",
+    "start:server": "nodemon ./server/bin/cluster --watch ./server",
+    "start:server:prod": "cross-env NODE_ENV=production npm run start:server",
     "start:client": "webpack-dev-server",
-    "start:prod": "cross-env NODE_ENV=production npm run start",
     "lint": "npm run lint:eslint -- . --ext .js --ext .jsx",
     "lint:eslint": "eslint",
     "pretest": "npm run test:clean && npm run lint",
