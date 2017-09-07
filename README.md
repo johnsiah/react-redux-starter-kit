@@ -17,6 +17,8 @@ This project is a PERN starter kit with the popular react-redux framework. Any p
 - [x] ESLint
 
 ## Get Started
+- Run `git clone https://github.com/johnsiah/react-redux-starter-kit DIRECTORY_PATH`
+  - Change `DIRECTORY_PATH` to your desire project location
 - Setup dependency using `npm install`
 - Install Postgresql using `brew install postgresql`
 - Run `npm install -g sequelize-cli` to use database helper (optional)
