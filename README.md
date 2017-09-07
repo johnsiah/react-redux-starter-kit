@@ -42,3 +42,7 @@ This project is a PERN starter kit with the popular react-redux framework. Any p
 - Pre-commit lint checks
 - Jest tests
 - Server cluster for production
+- Zero downtime restarts for production server using `kill -SIGUSR2 PID`
+  - Run `ps -ax` to get the master process ID
+  - Replace `PID` with the master process ID
+  - **Note:** This setup requires Bash
