@@ -22,8 +22,8 @@ This project is a PERN starter kit with the popular react-redux framework. Any p
 - Run `npm install -g sequelize-cli` to use database helper (optional)
 - Remove all `Example` related functions and keyword in `Actions`, `Reducers` and `App`.
 
-## Command
-|Script             |Description|
+## Script
+|Command            |Description|
 |-------------------|-----------|
 |`start`            |[localhost:3000](http://localhost:3000) for client-server development|
 |`start:all`        |Same as `start`|
