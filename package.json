@@ -6,9 +6,12 @@
     "start": "npm run start:all",
     "start:all": "npm-run-all -p start:server start:client",
     "start:all:prod": "cross-env NODE_ENV=production npm run start:all",
-    "start:client": "webpack-dev-server",
+    "start:client": "webpack-dev-server --config ./config/webpack.config.dev.js",
     "start:server": "nodemon ./server/bin/cluster --watch ./server",
     "start:server:prod": "cross-env NODE_ENV=production npm run start:server",
+    "prebuild": "npm run build:clean",
+    "build": "webpack --progress --config ./config/webpack.config.prod.js -p",
+    "build:clean": "npm run test:clean && rimraf ./dist",
     "lint": "npm run lint:eslint -- . --ext .js --ext .jsx",
     "lint:eslint": "eslint",
     "pretest": "npm run test:clean && npm run lint",
@@ -18,6 +21,12 @@
   },
   "lint-staged": {
     "*.{js,jsx}": "lint:eslint"
+  },
+  "babel": {
+    "extends": "./config/.babelrc"
+  },
+  "eslintConfig": {
+    "extends": "./config/.eslintrc"
   },
   "jest": {
     "collectCoverage": true,
