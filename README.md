@@ -1,4 +1,4 @@
-# react-redux-starter-kit [WIP]
+# react-redux-starter-kit
 This project is a PERN starter kit with the popular react-redux framework using postgresql.
 
 ## Frameworks
