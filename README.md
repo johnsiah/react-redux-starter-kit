@@ -1,5 +1,5 @@
 # react-redux-starter-kit [WIP]
-This project is a PERN starter kit with the popular react-redux framework. Any pull requests are welcome.
+This project is a PERN starter kit with the popular react-redux framework using postgresql.
 
 ## Frameworks
 - [x] React
@@ -34,6 +34,8 @@ This project is a PERN starter kit with the popular react-redux framework. Any p
 |`start:client`     |[localhost:3000](http://localhost:3000) for client development|
 |`start:server`     |[localhost:8000](http://localhost:8000) for server development|
 |`start:server:prod`|[localhost:8000](http://localhost:8000) for server development in production mode|
+|`start:tunnel`     |Start a tunnel for production build|
+|`tunnel`           |Start a tunnel for server|
 |`lint`             |Run ESLint on all .js and .jsx files|
 |`lint:eslint`      |Same as `lint`|
 |`test`             |Run test with Jest|
@@ -48,3 +50,6 @@ This project is a PERN starter kit with the popular react-redux framework. Any p
   - **Note:** This setup requires Bash
   - Run `ps` to get the master process ID
   - Replace `PID` with the master process ID
+  
+## Contribute
+You can always create a pull request to the repository. Any additional features are welcome.
