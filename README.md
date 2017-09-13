@@ -15,6 +15,8 @@ This project is a PERN starter kit with the popular react-redux framework. Any p
 - [x] Nodemon
 - [x] Jest
 - [x] ESLint
+- [ ] Localtunnel
+- [ ] GZIP
 
 ## Get Started
 - Run `git clone https://github.com/johnsiah/react-redux-starter-kit DIRECTORY_PATH`
