@@ -1,3 +1,4 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 # react-redux-starter-kit
 This project is a PERN starter kit with the popular react-redux framework using postgresql.
 
