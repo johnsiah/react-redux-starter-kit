@@ -51,5 +51,5 @@ This project is a PERN starter kit with the popular react-redux framework using 
   - Run `ps` to get the master process ID
   - Replace `PID` with the master process ID
   
-## Contribute
+## Contributing
 You can always create a pull request to the repository. Any additional features are welcome.
