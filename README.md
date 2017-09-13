@@ -15,8 +15,7 @@ This project is a PERN starter kit with the popular react-redux framework. Any p
 - [x] Nodemon
 - [x] Jest
 - [x] ESLint
-- [ ] Localtunnel
-- [ ] GZIP
+- [ ] I18n Translations
 
 ## Get Started
 - Run `git clone https://github.com/johnsiah/react-redux-starter-kit DIRECTORY_PATH`
@@ -43,6 +42,7 @@ This project is a PERN starter kit with the popular react-redux framework. Any p
 ## Features
 - Pre-commit lint checks
 - Jest tests
+- Localtunnel
 - Server cluster for production
 - Zero downtime restarts for production server using `kill -SIGUSR2 PID`
   - **Note:** This setup requires Bash
