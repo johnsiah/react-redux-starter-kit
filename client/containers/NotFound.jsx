@@ -1,7 +1,8 @@
 import React from "react"
+import { FormattedMessage } from "react-intl"
 
 const NotFound = () => (
-    <div>404 Not Found</div>
+    <FormattedMessage id="NotFound.title" />
 )
 
 export default NotFound

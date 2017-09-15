@@ -1,5 +1,8 @@
 {
   "Home": {
     "title": "首页"
+  },
+  "NotFound": {
+    "title": "404不存在"
   }
 }
