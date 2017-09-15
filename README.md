@@ -16,7 +16,7 @@ This project is a PERN starter kit with the popular react-redux framework using 
 - [x] Nodemon
 - [x] Jest
 - [x] ESLint
-- [ ] I18n Translations
+- [x] I18n
 
 ## Get Started
 - Run `git clone https://github.com/johnsiah/react-redux-starter-kit DIRECTORY_PATH`
@@ -43,6 +43,13 @@ This project is a PERN starter kit with the popular react-redux framework using 
 |`test:clean`       |Clear all test coverage files|
 
 ## Features
+- I18n for multiple language
+  - Add new `xx.json` language translations into `translations` folder
+  - Add `import xx from "react-intl/locale-data/xx"` to `i18n.js`
+  - Add `import xxTranslations from "./xx.json"` to `i18n.js`
+  - Append imported locale data into `addLocaleData([...en, ...zh, ...xx])`
+  - Add new entry `xx: getTranslations("xx", xxTranslations)` in `translationMessages`
+  - **Note:** `xx` is the locale code
 - Pre-commit lint checks
 - Jest tests
 - Localtunnel

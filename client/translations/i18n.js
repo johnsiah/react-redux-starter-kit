@@ -8,12 +8,12 @@ export const DEFAULT_LOCALE = "en"
 
 addLocaleData([...en, ...zh])
 
-const formatTranslationMessages = (locale, messages) => {
+const getTranslations = (locale, messages) => {
     const flatMessages = flattenMessages(messages)
 
     if (locale === DEFAULT_LOCALE) return flatMessages
 
-    const defaultMessages = formatTranslationMessages(DEFAULT_LOCALE, enTranslations)
+    const defaultMessages = getTranslations(DEFAULT_LOCALE, enTranslations)
 
     return Object.keys(defaultMessages).reduce((formattedMessages, key) => {
         let message = flatMessages[key]
@@ -35,10 +35,6 @@ const flattenMessages = (nestedMessages, prefix = "") => (
 
         return m
     }, {})
-)
-
-const getTranslations = (locale, messages) => (
-    formatTranslationMessages(locale, messages)
 )
 
 const translationMessages = {
