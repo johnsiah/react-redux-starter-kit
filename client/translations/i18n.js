@@ -1,20 +1,24 @@
 import { addLocaleData } from "react-intl"
 import en from "react-intl/locale-data/en"
+import zh from "react-intl/locale-data/zh"
 import enTranslations from "./en.json"
+import zhTranslations from "./zh.json"
 
 export const DEFAULT_LOCALE = "en"
 
-addLocaleData([...en])
+addLocaleData([...en, ...zh])
 
 const formatTranslationMessages = (locale, messages) => {
-    const defaultFormattedMessages = locale !== DEFAULT_LOCALE
-        ? formatTranslationMessages(DEFAULT_LOCALE, enTranslations)
-        : {}
-    return Object.keys(messages).reduce((formattedMessages, key) => {
-        let message = messages[key]
+    const flatMessages = flattenMessages(messages)
 
-        if (!message && locale !== DEFAULT_LOCALE)
-            message = defaultFormattedMessages[key]
+    if (locale === DEFAULT_LOCALE) return flatMessages
+
+    const defaultMessages = formatTranslationMessages(DEFAULT_LOCALE, enTranslations)
+
+    return Object.keys(defaultMessages).reduce((formattedMessages, key) => {
+        let message = flatMessages[key]
+
+        if (!message) message = defaultMessages[key]
 
         return Object.assign(formattedMessages, { [key]: message })
     }, {})
@@ -33,8 +37,13 @@ const flattenMessages = (nestedMessages, prefix = "") => (
     }, {})
 )
 
+const getTranslations = (locale, messages) => (
+    formatTranslationMessages(locale, messages)
+)
+
 const translationMessages = {
-    en: flattenMessages(formatTranslationMessages("en", enTranslations))
+    en: getTranslations("en", enTranslations),
+    zh: getTranslations("zh", zhTranslations)
 }
 
 export default translationMessages

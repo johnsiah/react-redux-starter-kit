@@ -14,7 +14,7 @@ const store = createStore(
     applyMiddleware(thunk)
 )
 
-const locale = "en" // TODO change later (temp)
+const locale = "zh" // TODO change later (temp)
 
 const render = messages => {
     ReactDOM.render(
@@ -26,8 +26,6 @@ const render = messages => {
         document.getElementById("root")
     )
 }
-
-console.log(translationMessages)
 
 if (!window.intl) {
     require.ensure([
