@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+
+const shell = require("shelljs") // eslint-disable-line
+const chalk = require("chalk") // eslint-disable-line
+const exec  = require("child_process").exec
+
+process.stdin.resume()
+process.stdin.setEncoding("utf8")
+
+process.stdout.write("\nCleaning old repository")
+
+cleanRepo(() => {
+    initGit(() => {
+        process.stdout.write("\nDone!")
+        process.exit(0)
+    })
+})
+
+function cleanRepo(callback) {
+    shell.rm("-rf", ".git/")
+    addCheckMark(callback)
+}
+
+function initGit(callback) {
+    exec("git init && git add . && git commit -m \"Initial commit\"", addCheckMark.bind(null, callback))
+}
+
+function addCheckMark(callback) {
+    process.stdout.write(chalk.green(" ✓"))
+    if (callback) callback()
+}
