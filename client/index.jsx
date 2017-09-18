@@ -2,8 +2,8 @@ import React from "react"
 import ReactDOM from "react-dom"
 import { createStore, applyMiddleware } from "redux"
 import { Provider } from "react-redux"
-import { IntlProvider } from "react-intl"
 import thunk from "redux-thunk"
+import LanguageProvider from "./containers/LanguageProvider"
 
 import reducer from "./reducers"
 import App from "./containers/App"
@@ -14,14 +14,12 @@ const store = createStore(
     applyMiddleware(thunk)
 )
 
-const locale = "en" // TODO change later (temp)
-
 const render = messages => {
     ReactDOM.render(
         <Provider store={store}>
-            <IntlProvider locale={locale} messages={messages[locale]}>
+            <LanguageProvider messages={messages}>
                 <App />
-            </IntlProvider>
+            </LanguageProvider>
         </Provider>,
         document.getElementById("root")
     )

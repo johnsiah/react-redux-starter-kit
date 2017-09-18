@@ -33,7 +33,8 @@
   },
   "jest": {
     "collectCoverage": true,
-    "testRegex": "\\.spec\\.js$"
+    "testRegex": "\\.spec\\.js$",
+    "coveragePathIgnorePatterns": ["/client/translations/"]
   },
   "dependencies": {
     "axios": "^0.16.2",

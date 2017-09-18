@@ -1,8 +1,8 @@
 import { combineReducers } from "redux"
-import example from "./example"
+import language from "./language"
 
 const rootReducer = combineReducers({
-    example
+    language
 })
 
 export default rootReducer

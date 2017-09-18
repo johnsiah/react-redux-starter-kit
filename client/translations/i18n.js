@@ -24,7 +24,7 @@ const getTranslations = (locale, messages) => {
     }, {})
 }
 
-const flattenMessages = (nestedMessages, prefix = "") => (
+export const flattenMessages = (nestedMessages, prefix = "") => (
     Object.keys(nestedMessages).reduce((messages, key) => {
         const value       = nestedMessages[key]
         const prefixedKey = prefix ? `${prefix}.${key}` : key
