@@ -10,7 +10,7 @@ process.stdin.setEncoding("utf8")
 process.stdout.write("\nCleaning old repository")
 
 cleanRepo(() => {
-    initGit(() => {
+    exec("git init", () => {
         process.stdout.write("\nDone!")
         process.exit(0)
     })
@@ -19,10 +19,6 @@ cleanRepo(() => {
 function cleanRepo(callback) {
     shell.rm("-rf", ".git/")
     addCheckMark(callback)
-}
-
-function initGit(callback) {
-    exec("git init && git add . && git commit -m \"Initial commit\"", callback)
 }
 
 function addCheckMark(callback) {
