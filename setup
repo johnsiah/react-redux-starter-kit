@@ -22,7 +22,7 @@ function cleanRepo(callback) {
 }
 
 function initGit(callback) {
-    exec("git init && git add . && git commit -m \"Initial commit\"", addCheckMark.bind(null, callback))
+    exec("git init && git add . && git commit -m \"Initial commit\"", callback)
 }
 
 function addCheckMark(callback) {
