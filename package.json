@@ -31,6 +31,7 @@
   "eslintConfig": {
     "extends": "./config/.eslintrc"
   },
+  "eslintIgnore": ["coverage", "dist"],
   "jest": {
     "collectCoverage": true,
     "testRegex": "\\.spec\\.js$",
