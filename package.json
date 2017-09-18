@@ -21,7 +21,6 @@
     "test:clean": "rimraf coverage",
     "presetup": "npm install",
     "setup": "node setup",
-    "postsetup": "rimraf setup && git add . && git commit -m \"Initial commit\"",
     "precommit": "lint-staged",
     "deploy": ""
   },
