@@ -24,7 +24,6 @@ This project is a PERN starter kit with the popular react-redux framework using 
 - Setup dependency using `npm install`
 - Install Postgresql using `brew install postgresql`
 - Run `npm install -g sequelize-cli` to use database helper (optional)
-- Remove all `Example` related functions and keyword in `Actions`, `Reducers` and `App`.
 
 ## Script
 |Command            |Description|
