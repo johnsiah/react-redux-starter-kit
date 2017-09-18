@@ -17,7 +17,7 @@ class App extends React.Component { //eslint-disable-line
             <Router>
                 <Switch>
                     <PropsRoute exact path="/" component={Home} {...this.props} />
-                    <Route component={NotFound} {...this.props} />
+                    <Route component={NotFound} />
                 </Switch>
             </Router>
         )
