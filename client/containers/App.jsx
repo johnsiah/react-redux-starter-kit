@@ -1,4 +1,6 @@
 import React from "react"
+import { bindActionCreators } from "redux"
+import { connect } from "react-redux"
 import {
     BrowserRouter as Router,
     Route,
@@ -7,14 +9,27 @@ import {
 import Home from "./Home"
 import NotFound from "./NotFound"
 import PropsRoute from "../components/PropsRoute"
+import * as actions from "../actions"
 
-const App = () => (
-    <Router>
-        <Switch>
-            <PropsRoute exact path="/" component={Home} />
-            <Route component={NotFound} />
-        </Switch>
-    </Router>
+class App extends React.Component { //eslint-disable-line
+    render() {
+        return (
+            <Router>
+                <Switch>
+                    <PropsRoute exact path="/" component={Home} {...this.props} />
+                    <Route component={NotFound} {...this.props} />
+                </Switch>
+            </Router>
+        )
+    }
+}
+
+const mapStateToProps = state => ({
+    language: state.language
+})
+
+const mapDispatchToProps = dispatch => (
+    bindActionCreators(actions, dispatch)
 )
 
-export default App
+export default connect(mapStateToProps, mapDispatchToProps)(App)

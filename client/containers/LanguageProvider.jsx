@@ -21,8 +21,4 @@ const mapStateToProps = state => ({
     locale: state.language.locale
 })
 
-function mapDispatchToProps(dispatch) {
-    return { dispatch }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(LanguageProvider)
+export default connect(mapStateToProps)(LanguageProvider)
