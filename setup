@@ -13,7 +13,7 @@ process.stdout.write("\nCleaning old repository")
 
 cleanRepo(() => {
     initGit(() => {
-        process.stdout.write("\nDone!")
+        process.stdout.write("\nDone!\n")
         process.exit(0)
     })
 })
